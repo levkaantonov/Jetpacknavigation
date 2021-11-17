@@ -8,6 +8,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import levkaantonov.com.study.jetpacknavigation.R
 import levkaantonov.com.study.jetpacknavigation.databinding.FragmentBoxBinding
+import levkaantonov.com.study.jetpacknavigation.publishResults
 import kotlin.random.Random
 
 class BoxFragment : Fragment(R.layout.fragment_box) {
@@ -33,7 +34,7 @@ class BoxFragment : Fragment(R.layout.fragment_box) {
         }
         binding.generateNumberButton.setOnClickListener {
             val randomNumber = Random.nextInt()
-            findNavController().previousBackStackEntry?.savedStateHandle?.set(EXTRA_RANDOM_NUMBER, randomNumber)
+            publishResults(EXTRA_RANDOM_NUMBER, randomNumber)
             findNavController().popBackStack()
         }
     }
