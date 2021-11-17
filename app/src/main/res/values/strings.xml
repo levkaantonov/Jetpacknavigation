@@ -9,4 +9,6 @@
     <string name="this_is_secret_text_view">this is a secret place</string>
     <string name="close_secret_button_text">close secret</string>
     <string name="close_whole_box_button_text">close the whole box</string>
+    <string name="GreenLabel">Mr. Green</string>
+    <string name="YellowLabel">Mr. Yellow</string>
 </resources>

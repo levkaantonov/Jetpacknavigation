@@ -19,25 +19,35 @@ class RootFragment : Fragment(R.layout.fragment_root) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentRootBinding.bind(view)
-        binding.greenBoxButton.setOnClickListener { openBox(Color.rgb(200, 255, 200)) }
-        binding.yellowBoxButton.setOnClickListener { openBox(Color.rgb(255, 255, 200)) }
+        binding.greenBoxButton.setOnClickListener {
+            openBox(
+                Color.rgb(200, 255, 200),
+                getString(R.string.GreenLabel)
+            )
+        }
+        binding.yellowBoxButton.setOnClickListener {
+            openBox(
+                Color.rgb(255, 255, 200),
+                getString(R.string.YellowLabel)
+            )
+        }
 
-        parentFragmentManager.setFragmentResultListener(
-            BoxFragment.REQUEST_CODE,
-            viewLifecycleOwner,
-            { _, data ->
-                val number = data.getInt(BoxFragment.EXTRA_RANDOM_NUMBER)
-                Toast.makeText(requireContext(), "Generated number $number", Toast.LENGTH_SHORT)
+        val liveData =
+            findNavController().currentBackStackEntry?.savedStateHandle?.getLiveData<Int>(
+                BoxFragment.EXTRA_RANDOM_NUMBER
+            )
+        liveData?.observe(viewLifecycleOwner) {
+            if (it != null) {
+                Toast.makeText(requireContext(), "Generated number $it", Toast.LENGTH_SHORT)
                     .show()
+                liveData.value = null
             }
-        )
+        }
     }
 
-    private fun openBox(color: Int) {
-        findNavController().navigate(
-            R.id.action_rootFragment_to_boxFragment,
-            bundleOf(BoxFragment.ARG_COLOR to color)
-        )
+    private fun openBox(color: Int, colorName: String) {
+        val direction = RootFragmentDirections.actionRootFragmentToBoxFragment(color, colorName)
+        findNavController().navigate(direction)
     }
 
     override fun onDestroyView() {
