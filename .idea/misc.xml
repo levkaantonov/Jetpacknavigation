@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/drawable/dashboard_item_background.xml" value="0.23743589743589744" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/drawable/ic_dashboard.xml" value="0.23743589743589744" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/drawable/ic_profile.xml" value="0.23743589743589744" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/drawable/ic_settings.xml" value="0.23743589743589744" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/drawable/splash.xml" value="0.23743589743589744" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/layout/activity_main.xml" value="0.225" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/layout/activity_splash.xml" value="0.225" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/layout/fragment_box.xml" value="0.225" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/layout/fragment_dashboard.xml" value="0.225" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/layout/fragment_edit_profile.xml" value="0.225" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/layout/fragment_profile.xml" value="0.225" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/layout/fragment_root.xml" value="0.225" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/layout/fragment_secret.xml" value="0.225" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/layout/fragment_settings.xml" value="0.225" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/layout/fragment_sign_in.xml" value="0.225" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/layout/fragment_sign_up.xml" value="0.225" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/layout/fragment_splash.xml" value="0.225" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/layout/fragment_tabs.xml" value="0.225" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/layout/item_setting.xml" value="0.225" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/layout/part_dashboard_item.xml" value="0.225" />
+        <entry key="..\:/Users/Wald/AndroidStudioProjects/Jetpacknavigation/app/src/main/res/menu/tabs_menu.xml" value="0.225" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
